@@ -241,7 +241,7 @@ const Footer: React.FC = () => {
               </DialogTrigger>
               <DialogContent className="download-btn-modal-card w-[300px] md:w-full sm:max-w-[495px] flex flex-col justify-center items-center pb-8">
                 <Image
-                  src="/frame.png"
+                  src="/androidBarCode.webp"
                   alt="FitnEarn QR Code"
                   width={200}
                   height={200}
