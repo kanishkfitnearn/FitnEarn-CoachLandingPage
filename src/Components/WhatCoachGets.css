@@ -1,0 +1,195 @@
+.what-coach {
+  padding: 100px 40px;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.what-coach__content {
+  margin-bottom: 80px;
+}
+
+.what-coach__title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.what-coach__title span {
+  background: linear-gradient(109.8deg, #DB2777 43.75%, #DA5F09 73.21%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.what-coach__subtitle {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+/* Container for phone and items */
+.what-coach__container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  height: 600px;
+}
+
+/* Eclipse backgrounds */
+.what-coach__eclipse {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  opacity: 0.6;
+}
+
+.what-coach__small-eclipse {
+  position: absolute;
+  width: 322px;
+  top: 18%;
+  left: 32%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  opacity: 0.8;
+}
+
+/* Center Phone Image */
+.what-coach__phone {
+  position: absolute;
+  width: 364px;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+/* Item styles */
+.what-coach__item {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+  z-index: 3;
+}
+
+/* Alignment-specific styles */
+.what-coach__item img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+/* Text alignment for Global Audience and Revenue Opportunities */
+.what-coach__item.text-right {
+  text-align: right;
+  align-items: flex-end;
+}
+
+/* Text alignment for Personal Brand and Work on Your Own Schedule */
+.what-coach__item.text-left {
+  text-align: left;
+  align-items: flex-start;
+}
+
+/* Global Audience Access (Top Left) */
+.global-access {
+  top: 20%;
+  left: 10%;
+}
+
+/* Personal Brand (Top Right) */
+.personal-brand {
+  top: 15%;
+  right: 10%;
+}
+
+/* Revenue Opportunities (Bottom Left) */
+.revenue {
+  bottom: 20%;
+  left: 10%;
+}
+
+/* Work on Your Own Schedule (Bottom Right) */
+.schedule {
+  bottom: 15%;
+  right: 10%;
+}
+
+.what-coach__item p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.what-coach__item span {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Animations */
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-spin {
+  animation: spin 10s linear infinite;
+}
+
+.animate-pulse {
+  animation: pulse 3s ease-in-out infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out;
+}
+
+.animate-slide-up {
+  animation: slide-up 1s ease-out;
+}
