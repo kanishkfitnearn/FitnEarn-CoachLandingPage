@@ -10,12 +10,22 @@ import HowItWorks from "../Components/HowItWork";
 import HowitWorksMobile from "../Components/HowItWorkMobile";
 import WhatCoachGets from "../Components/WhatIsInItForCoach";
 import BecomeACoach from "../Components/BecomeACoach";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Home() {
   const homeRef = useRef<HTMLElement>(null);
   const featuresRef = useRef<HTMLElement>(null);
   const howItWorksRef = useRef<HTMLElement>(null);
   const howItWorksMobileRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+    });
+  }, []);
 
   const scrollToHome = () => {
     homeRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -48,9 +58,6 @@ export default function Home() {
         <HealthJourney />
       </section>
 
-      <section ref={featuresRef}>
-        <KeyFeatures />
-      </section>
 
       <section>
         <JoinCommunity />
@@ -58,6 +65,9 @@ export default function Home() {
 
       <section>
         <WhatCoachGets />
+      </section>
+      <section ref={featuresRef}>
+        <KeyFeatures />
       </section>
 
       <section>

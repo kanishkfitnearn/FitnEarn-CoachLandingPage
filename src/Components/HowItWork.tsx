@@ -3,7 +3,7 @@ import Image from "next/image"; // Import Image from Next.js
 
 const HowItWorks = forwardRef<HTMLElement>((_, ref) => {
   return (
-    <section ref={ref} className="hidden md:block w-full overflow-hidden bg-neutral-900">
+    <section ref={ref} className="w-full hidden sm:block overflow-hidden bg-neutral-900">
       <div
         className="w-[120%] max-w-[1200px] mx-auto rounded-[54px] bg-custom-gradient-3 p-10 m-10 space-y-16 relative min-h-[500px]"
         data-aos="fade-up"
@@ -56,7 +56,6 @@ const HowItWorks = forwardRef<HTMLElement>((_, ref) => {
   );
 });
 
-// Add displayName to the component
 HowItWorks.displayName = "HowItWorks";
 
 export default HowItWorks;

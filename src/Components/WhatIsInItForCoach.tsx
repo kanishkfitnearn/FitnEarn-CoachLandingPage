@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const WhatCoachGets = () => {
   return (
-    <section className="py-24 px-10 bg-neutral-900 text-white text-center relative overflow-hidden">
+    <section className="py-10 px-10 bg-neutral-900 text-white text-center relative overflow-hidden">
       <div className="mb-20 w-full max-w-[82%] sm:max-w-[440px] lg:max-w-[540px] mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold mb-5">
           What's in it for{" "}
@@ -18,6 +18,7 @@ const WhatCoachGets = () => {
       </div>
 
       <div className="relative flex justify-center items-center h-[400px]">
+        {/* Background Ellipse */}
         <Image
           src="/Ellipse 1794 (2).png"
           alt="Background Ellipse"
@@ -28,6 +29,7 @@ const WhatCoachGets = () => {
           unoptimized={true}
         />
 
+        {/* Foreground Ellipse */}
         <Image
           src="/Ellipse 1794 (2).png"
           alt="Foreground Ellipse"
@@ -38,6 +40,7 @@ const WhatCoachGets = () => {
           unoptimized={true}
         />
 
+        {/* Mobile Mockup */}
         <div className="relative z-10 left-9 top-5 object-cover">
           <Image
             src="/iPhone Coach.png"
@@ -49,60 +52,70 @@ const WhatCoachGets = () => {
           />
         </div>
 
-        <div className="absolute -top-[5%] left-[63%] text-left">
+        {/* Decorative Circle 1 */}
+        <div className="absolute -top-[5%] left-[67%] sm:text-left text-center sm:left-[67%] left-[50%] transform -translate-x-1/2 sm:translate-x-0">
           <Image
             src="/c2.png"
             alt="Decorative Circle"
             width={100}
             height={100}
+            className="mx-auto sm:mx-0"
             quality={100}
             unoptimized={true}
           />
-          <p>Personal Brand</p>
-          <p className="font-thin text-gray-300">
+          <p className="text-sm sm:text-base">Personal Brand</p>
+          <p className="font-thin text-gray-300 text-xs sm:text-sm">
             Helps you gain global audience
           </p>
         </div>
 
-        <div className="absolute top-[10%] left-[28%] text-left">
+        {/* Decorative Circle 2 */}
+        <div className="absolute top-[0%] sm:left-[14%] left-[50%] text-center sm:text-right transform -translate-x-1/2 sm:translate-x-0">
           <Image
             src="/c1.png"
             alt="Decorative Circle"
             width={100}
             height={100}
+            className="mx-auto sm:ml-32"
             quality={100}
             unoptimized={true}
           />
-          <p>Global Audience Access</p>
-          <p className="font-thin text-gray-300 mr-5">
+          <p className="text-sm sm:text-base">Global Audience Access</p>
+          <p className="font-thin text-gray-300 text-xs sm:text-sm mr-5">
             Helps you gain global audience
           </p>
         </div>
-        <div className="absolute top-[50%] left-[63%] text-left">
+
+        {/* Decorative Circle 3 */}
+        <div className="absolute top-[60%] sm:left-[67%] left-[50%] text-center sm:text-left transform -translate-x-1/2 sm:translate-x-0">
           <Image
             src="/c4.png"
             alt="Decorative Circle"
             width={100}
             height={100}
+            className="mx-auto sm:mx-0"
             quality={100}
             unoptimized={true}
           />
-          <p>Work on Your Own Schedule</p>
-          <p className="font-thin text-gray-300">
+          <p className="text-sm sm:text-base">Work on Your Own Schedule</p>
+          <p className="font-thin text-gray-300 text-xs sm:text-sm">
             Helps you gain global audience
           </p>
         </div>
-        <div className="absolute top-[72%] left-[28%] text-left">
+
+        {/* Decorative Circle 4 */}
+        <div className="absolute top-[72%] sm:left-[14%] left-[50%] text-center sm:text-right transform -translate-x-1/2 sm:translate-x-0">
           <Image
             src="/c3.png"
             alt="Decorative Circle"
             width={100}
             height={100}
+            className="mx-auto sm:ml-32"
             quality={100}
             unoptimized={true}
           />
-          <p>Revenue Opportunities</p>
-          <p className="font-thin text-gray-300">
+          <p className="text-sm sm:text-base">Revenue Opportunities</p>
+          <p className="font-thin text-gray-300 text-xs sm:text-sm">
             Helps you gain global audience
           </p>
         </div>

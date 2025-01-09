@@ -19,30 +19,30 @@ const Data: ContentType[] = [
   },
   {
     title: "Verify",
-    heading: "7 days free trial",
+    heading: "",
     description:
       "Support for multiple languages, making health monitoring accessible and easy for users around the globe.",
-    image: "Frame 2608479.png",
+    image: "Circle (18).png",
   },
   {
     title: "Create Content",
-    heading: "Enjoy the Experience",
+    heading: "",
     description:
       "Support for multiple languages, making health monitoring accessible and easy for users around the globe.",
-    image: "Frame 2608479 (1).png",
+    image: "Circle (19).png",
   },
   {
     title: "Engage with Users",
-    heading: "Enjoy the Experience",
+    heading: "",
     description:
       "Support for multiple languages, making health monitoring accessible and easy for users around the globe.",
-    image: "Frame 2608479 (1).png",
+    image: "Circle (20).png",
   },
 ];
 
 const HowItWorksMobile = forwardRef<HTMLElement>((_, ref) => {
   return (
-    <section ref={ref} className="block md:hidden w-full bg-neutral-900">
+    <section ref={ref} className="block sm:hidden w-full">
       <div
         className="w-[87%] max-w-[1200px] mx-auto rounded-[54px] bg-custom-gradient-3 p-10 m-10 space-y-16 relative min-h-[500px]"
         data-aos="fade-up"

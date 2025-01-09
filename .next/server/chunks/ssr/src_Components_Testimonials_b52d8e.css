@@ -1,7 +1,6 @@
 /* [project]/src/Components/Testimonials.css [app-client] (css) */
 .testimonials {
   padding: 60px 40px;
-  background-color: #111;
   color: #fff;
   text-align: center;
   position: relative;
@@ -19,6 +18,13 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+}
+
+@media (width <= 768px) {
+  .testimonial__avatar-container {
+    display: none;
+    opacity: 0;
+  }
 }
 
 .testimonials__subtitle {

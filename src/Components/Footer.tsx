@@ -11,7 +11,7 @@ import { useState } from "react"; // Import useState to manage modal state
 const Footer: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false); // State to control modal visibility
   return (
-    <section className="hidden md:block w-full overflow-hidden bg-neutral-900">
+    <section className=" w-full overflow-hidden bg-neutral-900">
     <footer className="bg-custom-gradient-3 text-white py-8">
       <div className="w-[90%] max-w-7xl mx-auto flex flex-wrap justify-evenly space-y-8 md:space-y-0">
         {/* Logo and Description Section */}

@@ -22,7 +22,7 @@ const Navbar: React.FC<NavbarProps> = ({
 
   // Function to handle the "Download Now" button click
   const handleDownloadClick = () => {
-    window.open("https://fitnearn.com/login", "_blank");
+    window.open("https://app.formbricks.com/s/clzmewgfs00009edi7qrj0n52", "_blank");
   };
 
   return (
@@ -149,7 +149,7 @@ const Navbar: React.FC<NavbarProps> = ({
                   }
                   setIsSidebarOpen(false); // Close sidebar after click
                 }}
-                className="bg-gradient-to-r from-orange-500 to-yellow-500 text-white font-bold px-6 py-3 rounded-lg hover:scale-105 transition-transform duration-300 shadow-lg p-4 flex items-center space-x-3"
+                className="bg-custom-gradient2 hover:from-pink-600 hover:to-orange-600 text-white font-bold px-6 py-3 rounded-lg hover:scale-105 transition-transform duration-300 shadow-lg p-4 flex items-center space-x-3"
               >
                 {item}
               </a>
@@ -157,7 +157,7 @@ const Navbar: React.FC<NavbarProps> = ({
           ))}
           <div className="md:block mr-5">
             <button
-              className="bg-gradient-to-r from-orange-500 to-yellow-500 font-bold text-white px-4 py-2 rounded-xl hover:scale-105 transition duration-300"
+              className="bg-custom-gradient2 hover:from-pink-600 hover:to-orange-600 font-bold text-white px-4 py-2 rounded-xl hover:scale-105 transition duration-300"
               onClick={handleDownloadClick}
             >
               Sign Up Form

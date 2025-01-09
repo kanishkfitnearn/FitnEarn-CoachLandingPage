@@ -1,5 +1,9 @@
 "use client";
 
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import the necessary AOS styles
+
 const JoinCommunity = () => {
   const imageCollections = [
     {
@@ -28,8 +32,13 @@ const JoinCommunity = () => {
     },
   ];
 
+  // Initialize AOS animation on component mount
+  useEffect(() => {
+    AOS.init({ duration:500, once: false });
+  }, []);
+
   return (
-    <div className="w-full bg-neutral-900 text-white py-16">
+    <div className="w-full bg-neutral-900 text-white py-16" >
       <div className="text-center max-w-3xl mx-auto mb-12 px-4">
         <h1 className="text-4xl font-bold mb-6 flex items-center justify-center space-x-2">
           <span>Join the Growing Community of Coaches</span>
@@ -48,11 +57,16 @@ const JoinCommunity = () => {
         </button>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
+      <div
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-4"
+        data-aos="fade-up" // Apply fade-up animation to the grid container
+      >
         {imageCollections.map((item, index) => (
           <div
             key={index}
             className="relative w-full h-96 rounded-2xl overflow-hidden transition-transform duration-300 ease-in-out hover:translate-y-[-10px]"
+            data-aos="fade-up" // Fade-up animation for individual image containers
+            data-aos-delay={`${index * 200}`} // Stagger the animation for each image
           >
             <img
               className="w-full h-full object-cover opacity-60 bg-gray-900 filter grayscale hover:filter-none transition-all duration-300 ease-in-out"
