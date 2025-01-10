@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const HealthJourney = () => {
   return (
-    <section className="w-full overflow-hidden bg-neutral-900 text-white py-12 px-6 sm:px-8 md:px-16">
+    <section className="w-full overflow-hidden bg-neutral-850 text-white py-12 px-6 sm:px-8 md:px-16">
       <div className="flex flex-col md:flex-row md:space-x-8 items-center justify-between space-y-8 md:space-y-0">
         <div className="md:w-1/2">
           <div className="flex items-center gap-2 ">
@@ -21,7 +21,7 @@ const HealthJourney = () => {
           <p className="text-neutral-100 text-lg sm:text-xl md:text-2xl mb-6 leading-relaxed w-[70%]">
             <strong>
               Expand Your Reach, Inspire More Lives{" "}
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-orange-500 to-orange-600">
+              <span className="bg-clip-text text-transparent bg-custom-gradient4">
                 Join FitnEarnPal Today !
               </span>
             </strong>
@@ -73,7 +73,7 @@ const HealthJourney = () => {
                 />
                 <h4 className="w-[240px] md:w-[300px] text-[#E5E5E5] text-[24px] md:text-[33px] text-center leading-normal">
                   Scan & Download{" "}
-                  <span className="mid-heading bg-gradient-to-r from-orange-500 to-yellow-500 bg-clip-text text-transparent font-bold text-[28px] md:text-[38px]">
+                  <span className="mid-heading bg-custom-gradient2 bg-clip-text text-transparent font-bold text-[28px] md:text-[38px]">
                     FITNEARN
                   </span>{" "}
                   App
@@ -132,7 +132,7 @@ const HealthJourney = () => {
                 />
                 <h4 className="w-[240px] md:w-[300px] text-[#E5E5E5] text-[24px] md:text-[33px] text-center leading-normal">
                   Scan & Download{" "}
-                  <span className="mid-heading bg-gradient-to-r from-orange-500 to-yellow-500 bg-clip-text text-transparent font-bold text-[28px] md:text-[38px]">
+                  <span className="mid-heading bg-custom-gradient2 bg-clip-text text-transparent font-bold text-[28px] md:text-[38px]">
                     FITNEARN
                   </span>{" "}
                   App

@@ -24,14 +24,14 @@ const testimonialsData = [
   },
 ];
 
-const coachComments = [
-  "Best decision to join FitnEarnPal!",
-  "I’ve improved my audience reach greatly!",
-  "Now I can work on my schedule. Love it!",
-  "Highly recommended for any fitness coach!",
-  "Incredible platform for yoga professionals.",
-  "Amazing tools to manage live sessions!",
-];
+// const coachComments = [
+//   "Best decision to join FitnEarnPal!",
+//   "I’ve improved my audience reach greatly!",
+//   "Now I can work on my schedule. Love it!",
+//   "Highly recommended for any fitness coach!",
+//   "Incredible platform for yoga professionals.",
+//   "Amazing tools to manage live sessions!",
+// ];
 
 const coachImages = [
   "/coach1.png",
@@ -55,9 +55,9 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <section className="testimonials">
+    <section className="testimonials ">
       <h2 className="testimonials__title">
-        What our <span>Coach</span> Say
+        What our <span>Coach Say</span>
       </h2>
       <p className="testimonials__subtitle">
         FitnEarnPal empowers coaches to grow and reach a global audience while
@@ -78,9 +78,9 @@ const Testimonials = () => {
               alt={`Coach ${index + 1}`}
               className="testimonial__avatar"
             />
-            {hoveredIndex === index && (
+            {/* {hoveredIndex === index && (
               <div className="testimonial__comment">{coachComments[index]}</div>
-            )}
+            )} */}
           </div>
         ))}
 

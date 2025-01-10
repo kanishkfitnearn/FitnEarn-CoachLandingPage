@@ -7,38 +7,38 @@ import "aos/dist/aos.css"; // Import the necessary AOS styles
 const JoinCommunity = () => {
   const imageCollections = [
     {
-      name: "Sunset Beach",
+      name: "Dance Fitness Trainer",
       image: "/Screenshot 2025-01-06 151812.png",
     },
     {
-      name: "Mountain View",
+      name: "HIIT Trainer",
       image: "/2.png",
     },
     {
-      name: "City Lights",
+      name: "Yoga Trainer",
       image: "/Screenshot 2025-01-06 151837.png",
     },
     {
-      name: "Forest Trail",
+      name: "Boxing Trainer",
       image: "/Screenshot 2025-01-06 151916.png",
     },
     {
-      name: "Desert Dunes",
+      name: "Meditation Trainer",
       image: "/Screenshot 2025-01-06 151933.png",
     },
     {
-      name: "Ocean Waves",
+      name: "Strength Trainer",
       image: "/6.png",
     },
   ];
 
   // Initialize AOS animation on component mount
   useEffect(() => {
-    AOS.init({ duration:500, once: false });
+    AOS.init({ duration: 500, once: false });
   }, []);
 
   return (
-    <div className="w-full bg-neutral-900 text-white py-16" >
+    <div className="w-full bg-neutral-900 text-white py-16">
       <div className="text-center max-w-3xl mx-auto mb-12 px-4">
         <h1 className="text-4xl font-bold mb-6 flex items-center justify-center space-x-2">
           <span>Join the Growing Community of Coaches</span>
@@ -52,7 +52,15 @@ const JoinCommunity = () => {
           more.
         </p>
 
-        <button className="px-6 py-2 rounded-lg text-white font-semibold bg-custom-gradient2 hover:from-pink-600 hover:to-orange-600 relative z-10">
+        <button
+          className="px-6 py-2 rounded-lg text-white font-semibold bg-custom-gradient2 hover:from-pink-600 hover:to-orange-600 relative z-10"
+          onClick={() =>
+            window.open(
+              "https://app.formbricks.com/s/clzmewgfs00009edi7qrj0n52",
+              "_blank"
+            )
+          }
+        >
           Join Now
         </button>
       </div>
@@ -73,7 +81,7 @@ const JoinCommunity = () => {
               src={item.image}
               alt={item.name}
             />
-            <div className="absolute bottom-0 left-0 w-full text-center bg-black text-white text-lg font-bold py-3 z-10">
+            <div className="absolute bottom-0 left-0 w-full text-center bg-neutral-600 text-white text-lg font-bold py-3 z-10">
               {item.name}
             </div>
           </div>

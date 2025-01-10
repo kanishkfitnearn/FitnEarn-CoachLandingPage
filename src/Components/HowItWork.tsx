@@ -3,9 +3,12 @@ import Image from "next/image"; // Import Image from Next.js
 
 const HowItWorks = forwardRef<HTMLElement>((_, ref) => {
   return (
-    <section ref={ref} className="w-full hidden sm:block overflow-hidden bg-neutral-900">
+    <section
+      ref={ref}
+      className="w-full hidden sm:block overflow-hidden bg-neutral-900"
+    >
       <div
-        className="w-[120%] max-w-[1200px] mx-auto rounded-[54px] bg-custom-gradient-3 p-10 m-10 space-y-16 relative min-h-[500px]"
+        className="w-full mx-auto bg-custom-gradient-3 p-10 m-0 space-y-16 relative min-h-[500px] mt-8"
         data-aos="fade-up"
       >
         {/* Title Section */}

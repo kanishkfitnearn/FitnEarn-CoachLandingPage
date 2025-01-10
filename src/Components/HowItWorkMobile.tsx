@@ -11,40 +11,40 @@ interface ContentType {
 
 const Data: ContentType[] = [
   {
-    image: "Circle (17).png",
+    image: "/Circle (17).png",
     title: "Register",
     heading: "",
     description:
       "Support for multiple languages, making health monitoring accessible and easy for users around the globe.",
   },
   {
+    image: "/Circle (18).png",
     title: "Verify",
-    heading: "",
+    heading: "7 days free trial",
     description:
       "Support for multiple languages, making health monitoring accessible and easy for users around the globe.",
-    image: "Circle (18).png",
   },
   {
+    image: "/Circle (19).png",
     title: "Create Content",
-    heading: "",
+    heading: "Enjoy the Experience",
     description:
       "Support for multiple languages, making health monitoring accessible and easy for users around the globe.",
-    image: "Circle (19).png",
   },
   {
+    image: "/Circle (20).png",
     title: "Engage with Users",
-    heading: "",
+    heading: "Enjoy the Experience",
     description:
       "Support for multiple languages, making health monitoring accessible and easy for users around the globe.",
-    image: "Circle (20).png",
   },
 ];
 
 const HowItWorksMobile = forwardRef<HTMLElement>((_, ref) => {
   return (
-    <section ref={ref} className="block sm:hidden w-full">
+    <section ref={ref} className="block md:hidden w-full">
       <div
-        className="w-[87%] max-w-[1200px] mx-auto rounded-[54px] bg-custom-gradient-3 p-10 m-10 space-y-16 relative min-h-[500px]"
+        className="w-[87%] max-w-[1200px] space-y-16 relative min-h-[500px]"
         data-aos="fade-up"
       >
         {/* Title Section */}

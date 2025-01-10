@@ -14,8 +14,8 @@ interface TimelineProps {
   data: TimelineEntry[];
 }
 export const Timeline = ({ data }: TimelineProps) => {
-  const ref = useRef<HTMLDivElement>(null);  
-  const containerRef = useRef<HTMLDivElement>(null);  
+  const ref = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState(0);
 
   useEffect(() => {
@@ -62,8 +62,8 @@ export const Timeline = ({ data }: TimelineProps) => {
           >
             <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
               {/* circles */}
-              <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-orange-400 dark:bg-black flex items-center justify-center">
-                <div className="h-4 w-4 rounded-full bg-black border-neutral-300 dark:border-neutral-700 p-2" />
+              <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-custom-gradient2   flex items-center justify-center">
+                <div className="h-3 w-3 rounded-full bg-black border-neutral-300 dark:border-neutral-700" />
               </div>
             </div>
             <div className="ml-16 md:w-1/3">
@@ -73,19 +73,19 @@ export const Timeline = ({ data }: TimelineProps) => {
               <h4 className=" text-lg md:text-xl font-semibold text-neutral-400 dark:text-neutral-500">
                 {item.heading}
               </h4>
-              <p className="mt-2 text-sm md:text-base text-gray-500 dark:text-gray-300">
+              <p className="mt-2 text-sm md:text-base text-gray-300 dark:text-gray-300">
                 {item.description}
               </p>
             </div>
             <div className="ml-16 md:w-2/3">
-               <Image
-                                unoptimized={true}
-                                quality={100}
-                                  width={50}
-                                  height={300}
+              <Image
+                unoptimized={true}
+                quality={100}
+                width={50}
+                height={300}
                 src={item.image}
                 alt={item.title}
-                className="w-full rounded-lg shadow-lg"
+                className="w-full"
               />
             </div>
           </div>

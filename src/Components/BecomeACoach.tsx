@@ -6,7 +6,7 @@ const BecomeACoach = forwardRef<HTMLElement>((_, ref) => {
   return (
     <section
       ref={ref}
-      className="w-full overflow-hidden bg-neutral-900 text-white py-16 px-6 sm:px-8"
+      className="w-full overflow-hidden bg-neutral-900 text-white py-6 px-6 sm:px-8"
     >
       <h1 className="text-center text-4xl font-bold mb-8">
         Become{" "}
@@ -34,7 +34,7 @@ const BecomeACoach = forwardRef<HTMLElement>((_, ref) => {
       <div className="flex justify-center gap-4 items-center mt-[-24]">
         <Dialog>
           <DialogTrigger asChild>
-            <button className="relative inline-flex h-auto bg-custom-gradient2 hover:from-pink-600 hover:to-orange-600 overflow-hidden border-2 border-white rounded-[8px]">
+            <button className="relative inline-flex h-auto bg-custom-gradient2 hover:from-pink-600 hover:to-orange-600 overflow-hidden rounded-[8px]">
               <span className="inline-flex h-[61px] w-full gap-1 md:gap-[14px] cursor-pointer items-center justify-center rounded-[8px] py-2 md:py-[15px] px-3 md:px-[21px] text-sm font-medium text-white backdrop-blur-3xl">
                 <span>
                   <svg
@@ -75,7 +75,7 @@ const BecomeACoach = forwardRef<HTMLElement>((_, ref) => {
             />
             <h4 className="w-[240px] md:w-[300px] text-[#E5E5E5] text-[24px] md:text-[33px] text-center leading-normal">
               Scan & Download{" "}
-              <span className="mid-heading bg-gradient-to-r from-orange-500 to-yellow-500 bg-clip-text text-transparent font-bold text-[28px] md:text-[38px]">
+              <span className="mid-heading bg-custom-gradient2 bg-clip-text text-transparent font-bold text-[28px] md:text-[38px]">
                 FITNEARN
               </span>{" "}
               App
@@ -85,7 +85,7 @@ const BecomeACoach = forwardRef<HTMLElement>((_, ref) => {
 
         <Dialog>
           <DialogTrigger asChild>
-            <button className="relative inline-flex h-auto bg-custom-gradient2 hover:from-pink-600 hover:to-orange-600 overflow-hidden border-2 border-white rounded-[8px]">
+            <button className="relative inline-flex h-auto bg-custom-gradient2 hover:from-pink-600 hover:to-orange-600 overflow-hidden rounded-[8px]">
               <span className="inline-flex h-[61px] w-full gap-1 md:gap-[14px] cursor-pointer items-center justify-center rounded-[8px] py-2 md:py-[15px] px-3 md:px-[21px] text-sm font-medium text-white">
                 <span>
                   <svg
@@ -134,7 +134,7 @@ const BecomeACoach = forwardRef<HTMLElement>((_, ref) => {
             />
             <h4 className="w-[240px] md:w-[300px] text-[#E5E5E5] text-[24px] md:text-[33px] text-center leading-normal">
               Scan & Download{" "}
-              <span className="mid-heading bg-gradient-to-r from-orange-500 to-yellow-500 bg-clip-text text-transparent font-bold text-[28px] md:text-[38px]">
+              <span className="mid-heading bg-custom-gradient2 bg-clip-text text-transparent font-bold text-[28px] md:text-[38px]">
                 FITNEARN
               </span>{" "}
               App

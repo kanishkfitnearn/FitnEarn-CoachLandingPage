@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const WhatCoachGets = () => {
   return (
-    <section className="py-10 px-10 bg-neutral-900 text-white text-center relative overflow-hidden">
+    <section className="py-0 px-10 text-white text-center h-[42.5rem]">
       <div className="mb-20 w-full max-w-[82%] sm:max-w-[440px] lg:max-w-[540px] mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold mb-5">
           What's in it for{" "}
@@ -17,107 +17,101 @@ const WhatCoachGets = () => {
         </p>
       </div>
 
-      <div className="relative flex justify-center items-center h-[400px]">
-        {/* Background Ellipse */}
+      <div className="relative w-full h-[400px] flex justify-center items-center  ">
         <Image
           src="/Ellipse 1794 (2).png"
           alt="Background Ellipse"
           width={400}
           height={400}
-          className="absolute"
+          className="absolute min-w-60 sm:block hidden"
           quality={100}
           unoptimized={true}
         />
 
-        {/* Foreground Ellipse */}
         <Image
           src="/Ellipse 1794 (2).png"
           alt="Foreground Ellipse"
           width={300}
           height={300}
-          className="absolute"
+          className="absolute min-w-48 sm:block hidden"
           quality={100}
           unoptimized={true}
         />
 
-        {/* Mobile Mockup */}
-        <div className="relative z-10 left-9 top-5 object-cover">
+        <div className="relative z-10">
           <Image
-            src="/iPhone Coach.png"
+            src="/111-removebg-preview.png" //iphone wali image
             alt="Mobile Mockup"
-            width={350}
-            height={700}
+            width={250}
+            height={500}
             quality={100}
             unoptimized={true}
+            className="w-full max-w-xs md:max-w-md max-h-[390px] md:max-h-[490px] object-contain"
           />
         </div>
 
-        {/* Decorative Circle 1 */}
-        <div className="absolute -top-[5%] left-[67%] sm:text-left text-center sm:left-[67%] left-[50%] transform -translate-x-1/2 sm:translate-x-0">
+        <div className="absolute top-[0%] left-[78%] md:left-[68%] z-40 text-left">
           <Image
             src="/c2.png"
             alt="Decorative Circle"
             width={100}
             height={100}
-            className="mx-auto sm:mx-0"
             quality={100}
             unoptimized={true}
           />
-          <p className="text-sm sm:text-base">Personal Brand</p>
-          <p className="font-thin text-gray-300 text-xs sm:text-sm">
+          <p>Personal Brand</p>
+          <p className="font-thin text-gray-300 sm:block hidden">
             Helps you gain global audience
           </p>
         </div>
-
-        {/* Decorative Circle 2 */}
-        <div className="absolute top-[0%] sm:left-[14%] left-[50%] text-center sm:text-right transform -translate-x-1/2 sm:translate-x-0">
-          <Image
-            src="/c1.png"
-            alt="Decorative Circle"
-            width={100}
-            height={100}
-            className="mx-auto sm:ml-32"
-            quality={100}
-            unoptimized={true}
-          />
-          <p className="text-sm sm:text-base">Global Audience Access</p>
-          <p className="font-thin text-gray-300 text-xs sm:text-sm mr-5">
-            Helps you gain global audience
-          </p>
+        <div className=" absolute top-[15%] left-[5%] z-40 md:left-[18%] text-left">
+          <div className="flex flex-col w-16 md:w-52">
+            <Image
+              src="/c1.png"
+              alt="Decorative Circle"
+              width={100}
+              height={100}
+              quality={100}
+              unoptimized={true}
+              // className="ml-24"
+            />
+            <p className="z-50 ">Global Audience Access</p>
+            <p className="font-thin text-gray-300 mr-5 sm:block hidden">
+              Helps you gain global audience
+            </p>
+          </div>
         </div>
-
-        {/* Decorative Circle 3 */}
-        <div className="absolute top-[60%] sm:left-[67%] left-[50%] text-center sm:text-left transform -translate-x-1/2 sm:translate-x-0">
+        <div className="absolute top-[70%] left-[79%] md:left-[68%] z-40 text-left">
           <Image
             src="/c4.png"
             alt="Decorative Circle"
             width={100}
             height={100}
-            className="mx-auto sm:mx-0"
             quality={100}
             unoptimized={true}
           />
-          <p className="text-sm sm:text-base">Work on Your Own Schedule</p>
-          <p className="font-thin text-gray-300 text-xs sm:text-sm">
+          <p>Work on Your Own Schedule</p>
+          <p className="font-thin text-gray-300 sm:block hidden">
             Helps you gain global audience
           </p>
         </div>
-
-        {/* Decorative Circle 4 */}
-        <div className="absolute top-[72%] sm:left-[14%] left-[50%] text-center sm:text-right transform -translate-x-1/2 sm:translate-x-0">
-          <Image
-            src="/c3.png"
-            alt="Decorative Circle"
-            width={100}
-            height={100}
-            className="mx-auto sm:ml-32"
-            quality={100}
-            unoptimized={true}
-          />
-          <p className="text-sm sm:text-base">Revenue Opportunities</p>
-          <p className="font-thin text-gray-300 text-xs sm:text-sm">
-            Helps you gain global audience
-          </p>
+        {/* absolute top-[80%] left-[1%] md:left-[10%] z-40 text-left */}
+        <div className="absolute top-[80%] left-[5%] md:left-[18%] z-40 text-lef text-left">
+          <div className="flex flex-col w-16 md:w-auto">
+            <Image
+              src="/c3.png"
+              alt="Decorative Circle"
+              width={100}
+              height={100}
+              quality={100}
+              unoptimized={true}
+              className=""
+            />
+            <p>Revenue Opportunities</p>
+            <p className="font-thin text-gray-300 sm:block hidden">
+              Helps you gain global audience
+            </p>
+          </div>
         </div>
       </div>
     </section>
