@@ -16,20 +16,24 @@ const BecomeACoach = forwardRef<HTMLElement>((_, ref) => {
         Today
       </h1>
       <div className="flex justify-center relative">
-  {/* Left Phone */}
-  <img
-    src="/iPhone 13 Pro Max (6).png"
-    alt="App Screen 1"
-    className="w-[18rem] h-[25rem] sm:w-[20rem] sm:h-[30rem] md:w-[25rem] md:h-[35rem] absolute object-cover drop-shadow-lg -ml-10 sm:-ml-16"
-  />
+        {/* Left Phone */}
+        <Image
+          src="/iPhone 13 Pro Max (6).png"
+          alt="App Screen 1"
+          width={250}
+          height={350}
+          className="w-[18rem] h-[25rem] sm:w-[20rem] sm:h-[30rem] md:w-[25rem] md:h-[35rem] absolute object-cover drop-shadow-lg -ml-10 sm:-ml-16"
+        />
 
-  {/* Right Phone */}
-  <img
-    src="/file.png"
-    alt="App Screen 2"
-    className="w-[18rem] h-[25rem] sm:w-[20rem] sm:h-[30rem] md:w-[25rem] md:h-[35rem] object-cover drop-shadow-lg -mr-10 ml-10 sm:ml-24"
-  />
-</div>
+        {/* Right Phone */}
+        <Image
+          src="/file.png"
+          alt="App Screen 2"
+          width={250}
+          height={350}
+          className="w-[18rem] h-[25rem] sm:w-[20rem] sm:h-[30rem] md:w-[25rem] md:h-[35rem] object-cover drop-shadow-lg -mr-10 ml-10 sm:ml-24"
+        />
+      </div>
 
       <div className="flex justify-center gap-4 items-center mt-[-24]">
         <Dialog>

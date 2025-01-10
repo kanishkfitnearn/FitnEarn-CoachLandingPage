@@ -17,17 +17,21 @@ const FeaturesSection = forwardRef<HTMLElement>((_, ref) => {
       </h1>
       <div className="flex justify-center relative">
         {/* Left Phone */}
-        <img
+        <Image
           src="/iPhone 13 Pro Max (6).png"
           alt="App Screen 1"
-          className="w-53 h-[35rem] absolute object-cover drop-shadow-lg -ml-16"
+          width={530} // Adjust the width as needed
+          height={560} // Adjust the height as needed
+          className="absolute object-cover drop-shadow-lg -ml-16"
         />
 
         {/* Right Phone */}
-        <img
+        <Image
           src="/file.png"
           alt="App Screen 2"
-          className="w-53 h-[35rem] object-cover drop-shadow-lg -mr-16 ml-24"
+          width={530} // Adjust the width as needed
+          height={560} // Adjust the height as needed
+          className="object-cover drop-shadow-lg -mr-16 ml-24"
         />
       </div>
       <div className="flex justify-center gap-4 items-center mt-[-24]">

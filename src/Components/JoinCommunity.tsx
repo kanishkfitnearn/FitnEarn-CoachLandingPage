@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import the necessary AOS styles
+import Image from "next/image"; // Import Image from Next.js
 
 const JoinCommunity = () => {
   const imageCollections = [
@@ -76,10 +77,12 @@ const JoinCommunity = () => {
             data-aos="fade-up" // Fade-up animation for individual image containers
             data-aos-delay={`${index * 200}`} // Stagger the animation for each image
           >
-            <img
-              className="w-full h-full object-cover opacity-60 bg-gray-900 filter grayscale hover:filter-none transition-all duration-300 ease-in-out"
+            <Image
               src={item.image}
               alt={item.name}
+              className="w-full h-full object-cover opacity-60 bg-gray-900 filter grayscale hover:filter-none transition-all duration-300 ease-in-out"
+              width={500}  // Set width
+              height={400} // Set height
             />
             <div className="absolute bottom-0 left-0 w-full text-center bg-neutral-600 text-white text-lg font-bold py-3 z-10">
               {item.name}

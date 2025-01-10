@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Image from "next/image"; // Import Next.js Image component
 import "./Testimonials.css";
 
 const testimonialsData = [
@@ -24,15 +25,6 @@ const testimonialsData = [
   },
 ];
 
-// const coachComments = [
-//   "Best decision to join FitnEarnPal!",
-//   "I’ve improved my audience reach greatly!",
-//   "Now I can work on my schedule. Love it!",
-//   "Highly recommended for any fitness coach!",
-//   "Incredible platform for yoga professionals.",
-//   "Amazing tools to manage live sessions!",
-// ];
-
 const coachImages = [
   "/coach1.png",
   "/coach1.png",
@@ -55,7 +47,7 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <section className="testimonials ">
+    <section className="testimonials">
       <h2 className="testimonials__title">
         What our <span>Coach Say</span>
       </h2>
@@ -73,18 +65,17 @@ const Testimonials = () => {
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(0)}
           >
-            <img
+            <Image
               src={coach}
               alt={`Coach ${index + 1}`}
               className="testimonial__avatar"
+              width={100} // Add width and height
+              height={100}
             />
-            {/* {hoveredIndex === index && (
-              <div className="testimonial__comment">{coachComments[index]}</div>
-            )} */}
           </div>
         ))}
 
-        <div className=" rounded-lg py-8 px-6 text-center mx-auto w-72 relative min-h-[250px] z-20">
+        <div className="rounded-lg py-8 px-6 text-center mx-auto w-72 relative min-h-[250px] z-20">
           <div className="text-lg text-yellow-400 mb-4">
             {"★".repeat(testimonialsData[activeIndex].stars)}
             {"☆".repeat(5 - testimonialsData[activeIndex].stars)}
@@ -92,10 +83,12 @@ const Testimonials = () => {
           <p className="text-base text-gray-400 mb-4">
             {testimonialsData[activeIndex].text}
           </p>
-          <img
+          <Image
             src="/coachMain.png"
             alt="Central Coach"
             className="w-24 h-24 rounded-full mb-4 mx-auto"
+            width={96} // Add width and height for Image component
+            height={96}
           />
           <p className="text-lg font-bold text-white mb-1">
             {testimonialsData[activeIndex].name}

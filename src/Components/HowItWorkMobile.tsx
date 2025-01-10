@@ -1,5 +1,4 @@
 import { forwardRef } from "react";
-import Image from "next/image"; // Import Image from Next.js
 import { Timeline } from "./ui/timeline";
 
 interface ContentType {

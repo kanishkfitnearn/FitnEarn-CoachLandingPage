@@ -6,7 +6,7 @@ const WhatCoachGets = () => {
     <section className="py-0 px-10 text-white text-center h-[42.5rem]">
       <div className="mb-20 w-full max-w-[82%] sm:max-w-[440px] lg:max-w-[540px] mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold mb-5">
-          What's in it for{" "}
+          What&apos;s in it for{" "}
           <span className="bg-gradient-to-r from-pink-600 to-orange-500 bg-clip-text text-transparent">
             Coach
           </span>
@@ -17,7 +17,7 @@ const WhatCoachGets = () => {
         </p>
       </div>
 
-      <div className="relative w-full h-[400px] flex justify-center items-center  ">
+      <div className="relative w-full h-[400px] flex justify-center items-center">
         <Image
           src="/Ellipse 1794 (2).png"
           alt="Background Ellipse"
@@ -73,7 +73,6 @@ const WhatCoachGets = () => {
               height={100}
               quality={100}
               unoptimized={true}
-              // className="ml-24"
             />
             <p className="z-50 ">Global Audience Access</p>
             <p className="font-thin text-gray-300 mr-5 sm:block hidden">
