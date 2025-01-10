@@ -1,5 +1,4 @@
 import { forwardRef } from "react";
-import Image from "next/image"; // Import Image from Next.js
 
 const HowItWorks = forwardRef<HTMLElement>((_, ref) => {
   return (
