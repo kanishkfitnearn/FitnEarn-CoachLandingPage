@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import the necessary AOS styles
 import Image from "next/image"; // Import Image from Next.js
-
+import { TypewriterParagraph } from "./ui/TypewriterParagraph";
 
 const JoinCommunity = () => {
   const imageCollections = [
@@ -33,6 +33,12 @@ const JoinCommunity = () => {
       image: "/6.png",
     },
   ];
+  const paragraphText = `FitnEarnPal is your gateway to connect with a global community of
+      health and fitness enthusiasts, share experiences and valuable
+      knowledge, and grow your audience. As a coach, you have the power to
+      inspire, educate, and motivate users worldwide by creating and sharing
+      impactful content, workout videos, conducting live sessions, and much
+      more.`;
 
   // Initialize AOS animation on component mount
   useEffect(() => {
@@ -41,30 +47,22 @@ const JoinCommunity = () => {
 
   return (
     <div className="w-full bg-neutral-900 text-white py-16">
+      {/* <div className="w-full text-white py-16"> */}
       <div className="text-center max-w-3xl mx-auto mb-12 px-4">
-        <h1 className="text-4xl font-bold mb-6 flex items-center justify-center space-x-2">
+        <h1 className="text-4xl font-bold mb-6 flex items-center justify-center">
           <span>Join the Growing Community of Coaches</span>
         </h1>
-        <p className="text-xl text-gray-300 leading-relaxed mb-6">
-          FitnEarnPal is your gateway to connect with a global community of
-          health and fitness enthusiasts, share experiences and valuable
-          knowledge, and grow your audience. As a coach, you have the power to
-          inspire, educate, and motivate users worldwide by creating and sharing
-          impactful content, workout videos, conducting live sessions, and much
-          more.
-        </p>
+        {/* <p className="text-xl text-gray-300 leading-relaxed mb-6"> */}
+        <TypewriterParagraph text={paragraphText} className="text-lg" />
 
-        <button
-          className="px-6 py-2 rounded-lg text-white font-semibold bg-custom-gradient2 hover:from-pink-600 hover:to-orange-600 relative z-10"
-          onClick={() =>
-            window.open(
-              "https://app.formbricks.com/s/clzmewgfs00009edi7qrj0n52",
-              "_blank"
-            )
-          }
-        >
-          Join Now
-        </button>
+        {/* </p> */}
+
+        <button 
+  onClick={() => window.open('https://app.formbricks.com/s/clzmewgfs00009edi7qrj0n52', '_blank')}
+  className="px-6 py-2 mt-8 rounded-lg text-white font-semibold bg-custom-gradient2 hover:from-pink-600 hover:to-orange-600 relative z-10">
+  Join Now
+</button>
+
       </div>
 
       <div
@@ -82,7 +80,7 @@ const JoinCommunity = () => {
               src={item.image}
               alt={item.name}
               className="w-full h-full object-cover opacity-60 bg-gray-900 filter grayscale hover:filter-none transition-all duration-300 ease-in-out"
-              width={500}  // Set width
+              width={500} // Set width
               height={400} // Set height
             />
             <div className="absolute bottom-0 left-0 w-full text-center bg-neutral-600 text-white text-lg font-bold py-3 z-10">
