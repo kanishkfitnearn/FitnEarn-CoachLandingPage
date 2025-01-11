@@ -7,21 +7,24 @@ import "./Testimonials.css";
 const testimonialsData = [
   {
     text: "After joining FitnEarnPal, my audience reach has increased and I can work according to my time, which I liked the most.",
-    name: "John Doe",
+    name: "Yashita",
     role: "Yoga Trainer",
     stars: 5,
+    image: "/Screenshot 2025-01-06 151837.png", // Image for Yashita
   },
   {
     text: "FitnEarnPal gave me a platform to share my fitness journey and help others achieve their goals.",
-    name: "Jane Smith",
-    role: "Fitness Coach",
+    name: "Neha",
+    role: "Zumba Trainer",
     stars: 4,
+    image: "/Screenshot 2025-01-06 151812.png", // Image for Neha
   },
   {
     text: "The ability to conduct live sessions and write blogs has made me connect better with my audience.",
-    name: "Mark Johnson",
+    name: "Pooja",
     role: "Meditation Trainer",
     stars: 5,
+    image: "/Screenshot 2025-01-06 151933.png", // Image for Pooja
   },
 ];
 
@@ -84,8 +87,8 @@ const Testimonials = () => {
             {testimonialsData[activeIndex].text}
           </p>
           <Image
-            src="/coachMain.png"
-            alt="Central Coach"
+            src={testimonialsData[activeIndex].image} // Dynamic image based on activeIndex
+            alt={testimonialsData[activeIndex].name}
             className="w-24 h-24 rounded-full mb-4 mx-auto"
             width={96} // Add width and height for Image component
             height={96}
