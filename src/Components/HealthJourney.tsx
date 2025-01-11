@@ -74,7 +74,7 @@ const HealthJourney = () => {
                 <h4 className="w-[240px] md:w-[300px] text-[#E5E5E5] text-[24px] md:text-[33px] text-center leading-normal">
                   Scan & Download{" "}
                   <span className="mid-heading bg-custom-gradient2 bg-clip-text text-transparent font-bold text-[28px] md:text-[38px]">
-                    FITNEARN
+                    FITNEARNPAL
                   </span>{" "}
                   App
                 </h4>
@@ -133,7 +133,7 @@ const HealthJourney = () => {
                 <h4 className="w-[240px] md:w-[300px] text-[#E5E5E5] text-[24px] md:text-[33px] text-center leading-normal">
                   Scan & Download{" "}
                   <span className="mid-heading bg-custom-gradient2 bg-clip-text text-transparent font-bold text-[28px] md:text-[38px]">
-                    FITNEARN
+                    FITNEARNPAL
                   </span>{" "}
                   App
                 </h4>

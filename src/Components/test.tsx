@@ -26,12 +26,12 @@ const testimonialsData = [
 ];
 
 const coachImages = [
-  "/coach1.png",
-  "/coach1.png",
-  "/coach1.png",
-  "/coach1.png",
-  "/coach1.png",
-  "/coach1.png",
+  "/Circle (21).png",
+  "/Group 1000005368.png",
+  "/Group 1000005371 (1).png",
+  "/Group 1000005372.png",
+  "/Group 1000005369.png",
+  "/Group 1000005370.png",
 ];
 
 const Testimonials = () => {

@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
                   height={16}
                   className="inline mr-2"
                 />
-                help-support@fitnearn.com
+                support.fitnearnpal@gmail.com
               </a>
             </p>
             <div className="flex mt-4 space-x-4">
@@ -94,7 +94,7 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
-          {/* Useful Links Section */}
+          {/* Useful Links Section
           <div className="w-1/2 md:w-1/4 lg:flex-1 px-4 items-center">
             <h4 className="font-semibold text-lg mb-4">Useful Links</h4>
             <ul className="space-y-4 text-sm text-justify">
@@ -106,12 +106,12 @@ const Footer: React.FC = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           {/* Help & Support Section */}
-          <div className="w-1/2 md:w-1/4 lg:flex-1 px-4">
+          <div className="w-1/2 md:w-1/4 lg:flex-1 px-4 text-center">
             <h4 className="font-semibold text-lg mb-4">Help & Support</h4>
-            <ul className="space-y-4 text-sm text-justify">
+            <ul className="space-y-4 text-sm  text-center">
               {[
                 {
                   label: "About us",
@@ -147,9 +147,9 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Download App Section */}
-          <div className="w-full md:w-1/2 lg:flex-1 px-4">
+          <div className="w-full md:w-1/2 lg:flex-1 px-4 text-center">
             <h4 className="font-semibold text-lg mb-4">Download App</h4>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2 ml-24">
               {/* App Store Button */}
               <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
                 <DialogTrigger asChild>
@@ -246,7 +246,7 @@ const Footer: React.FC = () => {
                   <h4 className="w-[240px] md:w-[300px] text-[#E5E5E5] text-[24px] md:text-[33px] text-center leading-normal">
                     Scan & Download{" "}
                     <span className="mid-heading bg-custom-gradient2 bg-clip-text text-transparent font-bold text-[28px] md:text-[38px]">
-                      FITNEARN
+                      FITNEARNPAL
                     </span>{" "}
                     App
                   </h4>

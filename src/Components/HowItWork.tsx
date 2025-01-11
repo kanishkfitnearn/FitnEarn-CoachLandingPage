@@ -21,16 +21,16 @@ const HowItWorks = forwardRef<HTMLElement>((_, ref) => {
         <div className="relative">
           <img
             src="/Rectangle 7 (1).png"
-            className="h-0.5 w-[90%] mx-8"
+            className="h-0.5 w-[85%] mx-16"
             alt=""
           />
 
           {/* Overlapping images */}
           <div className="absolute top-[-47px] left-0 w-full flex justify-between">
-            <img src="/Group 1000005340.png" alt="" className="h-[80%]" />
-            <img src="/Group 1000005341.png" alt="" className="h-[80%]" />
-            <img src="/Group 1000005342.png" alt="" />
-            <img src="/Group 1000005343.png" alt="" />
+            <img src="/Group 1000005340.png" alt="" className="h-[80%] ml-12" />
+            <img src="/Group 1000005341.png" alt="" className="h-[80%] ml-6" />
+            <img src="/Group 1000005342.png" alt="" className="mr-2"/>
+            <img src="/Group 1000005343.png" alt="" className="mr-10"/>
           </div>
         </div>
 
