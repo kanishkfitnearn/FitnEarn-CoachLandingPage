@@ -30,6 +30,7 @@ export default function RootLayout({
           content="FitnEarnPal, fitness coaches platform, health coaches, global platform for coaches, blog writing for coaches, live sessions, content creation, workout videos, coach community, fitness inspiration, global health platform"
         />
         <meta name="author" content="Fit Earn Meditate" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
       </head>
       <body className="bg-neutral-900">{children}</body>
     </html>
