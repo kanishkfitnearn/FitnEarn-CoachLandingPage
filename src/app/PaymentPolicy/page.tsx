@@ -14,7 +14,7 @@ type ContentType = {
 };
 
 const ReturnAndRefund = () => {
-  const [content, setContent] = useState<ContentType>({
+  const [content] = useState<ContentType>({
     time: new Date().getTime(),
     blocks: [
       {

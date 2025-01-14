@@ -13,7 +13,7 @@ type ContentType = {
 };
 
 const DataDeletionPolicy = () => {
-    const [content, setContent] = useState<ContentType>({
+    const [content] = useState<ContentType>({
       time: new Date().getTime(),
       blocks: [
         {

@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 
 const AboutUs = () => {
-  const [content, setContent] = useState<Content>({
+  const [content] = useState<Content>({
     time: new Date().getTime(),
     blocks: [
       {
