@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 type BlockType = 
   | { type: "header"; data: { text: string; level: number } }
