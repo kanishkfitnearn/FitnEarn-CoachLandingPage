@@ -115,23 +115,23 @@ const Footer: React.FC = () => {
               {[
                 {
                   label: "About us",
-                  href: "https://fitnearn.com/about-us",
+                  href: "/AboutUs",
                 },
                 {
                   label: "Terms & Conditions",
-                  href: "https://fitnearn.com/terms-and-conditions",
+                  href: "/TermsAndConditions",
                 },
                 {
                   label: "Privacy Policy",
-                  href: "https://fitnearn.com/privacy-policy",
+                  href: "/PrivacyPolicy",
                 },
                 {
                   label: "Data Deletion Policy",
-                  href: "https://fitnearn.com/cancellation-policy",
+                  href: "/DataDelietionPolicy",
                 },
                 {
-                  label: "Return and Refund Policy",
-                  href: "https://fitnearn.com/return-and-refund",
+                  label: "Payment Policy",
+                  href: "/PaymentPolicy",
                 },
               ].map((link, index) => (
                 <li key={index}>

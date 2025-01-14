@@ -152,8 +152,7 @@ const HealthJourney = () => {
                 height={500} // Replace with the appropriate height
                 className="z-0"
                 quality={100}
-          unoptimized={true}
-
+                unoptimized={true}
               />
               <Image
                 src="/Ellipse 1794 (2).png"
@@ -162,7 +161,7 @@ const HealthJourney = () => {
                 height={390} // Replace with the appropriate height
                 className="z-0 absolute"
                 quality={100}
-          unoptimized={true}
+                unoptimized={true}
               />
             </div>
             <div>
@@ -175,34 +174,42 @@ const HealthJourney = () => {
                 priority
               />
 
-              <Image
-                src="/Circle (14).png"
-                alt="Decorative Circle 1"
-                className="absolute w-16 sm:w-18 md:w-22 top-[20%] left-[69%] md:left-[69%] transform -translate-y-1/2 z-40"
-                width={100}
-                height={100}
-              />
-              <Image
-                src="/Circle (15).png"
-                alt="Decorative Circle 1"
-                className="absolute w-16 sm:w-18 md:w-22 top-[10%] left-[16%] md:left-[16%] transform -translate-y-1/2 z-40"
-                width={100}
-                height={100}
-              />
-              <Image
-                src="/Circle (16).png"
-                alt="Decorative Circle 1"
-                className="absolute w-16 sm:w-18 md:w-22 top-[90%] left-[69%] md:left-[69%] transform -translate-y-1/2 z-40"
-                width={100}
-                height={100}
-              />
-              <Image
-                src="/Circle (2).png"
-                alt="Decorative Circle 2"
-                className="absolute w-16 sm:w-18 md:w-22 top-[78%] left-[17%] md:left-[17%] transform -translate-y-1/2 z-40"
-                width={100}
-                height={100}
-              />
+              <div className="group">
+                <Image
+                  src="/Circle (14).png"
+                  alt="Decorative Circle 1"
+                  className="absolute w-16 sm:w-18 md:w-22 top-[20%] left-[69%] md:left-[69%] transform -translate-y-1/2 z-40 transition-transform duration-300 group-hover:scale-125"
+                  width={100}
+                  height={100}
+                />
+              </div>
+              <div className="group">
+                <Image
+                  src="/Circle (15).png"
+                  alt="Decorative Circle 1"
+                  className="absolute w-16 sm:w-18 md:w-22 top-[10%] left-[16%] md:left-[16%] transform -translate-y-1/2 z-40 transition-transform duration-300 group-hover:scale-125"
+                  width={100}
+                  height={100}
+                />
+              </div>
+              <div className="group">
+                <Image
+                  src="/Circle (16).png"
+                  alt="Decorative Circle 1"
+                  className="absolute w-16 sm:w-18 md:w-22 top-[90%] left-[69%] md:left-[69%] transform -translate-y-1/2 z-40 transition-transform duration-300 group-hover:scale-125"
+                  width={100}
+                  height={100}
+                />
+              </div>
+              <div className="group">
+                <Image
+                  src="/Circle (22).png"
+                  alt="Decorative Circle 2"
+                  className="absolute w-16 sm:w-18 md:w-22 top-[78%] left-[17%] md:left-[17%] transform -translate-y-1/2 z-40 transition-transform duration-300 group-hover:scale-125"
+                  width={100}
+                  height={100}
+                />
+              </div>
             </div>
           </div>
         </div>
